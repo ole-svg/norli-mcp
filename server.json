@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "se.norli/norli-mcp",
+  "title": "Norli",
+  "description": "Airbnb rental income estimates, guides and service areas for Stockholm and Sörmland, Sweden.",
+  "version": "1.0.0",
+  "websiteUrl": "https://www.norli.se/",
+  "repository": {
+    "url": "https://github.com/ole-svg/norli-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.norli.se/mcp"
+    }
+  ]
+}
