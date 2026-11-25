@@ -68,6 +68,10 @@ rounded to whole thousands of SEK, what guests pay before VAT, platform fees, No
 costs. It also returns `rapport_url`, a link to Norli's full report with seasons and nightly
 rates, and `metod_url`, how Norli calculates.
 
+`norli_forvaltar` says whether Norli takes on this type of home at this postcode: `true`,
+`false`, or `null` when it cannot be determined. `omrade` says the same in one sentence. The
+estimate is given either way.
+
 ### `sok_guider`: search the guides
 
 | Argument | Type | Required | |
@@ -82,8 +86,11 @@ cleaning, renting to companies, and guides per area.
 ### `omraden`: where Norli takes on homes
 
 No arguments. Returns the areas Norli takes on, the property types per area and links to the
-published area guides: holiday homes in Sörmland (Södermanland County), and houses and
-apartments in the Stockholm area.
+published area guides:
+
+- houses in Stockholm County
+- holiday homes in Stockholm and Södermanland counties
+- apartments in central Stockholm (postcodes 111–118) and in Solna and Sundbyberg (169–174)
 
 ## Example
 
